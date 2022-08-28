@@ -30,11 +30,27 @@ body{
     flex-direction: column;
   
 }
+.logo-blanco{
+    width: 200px;
+    padding-top: 20px;
+}
 .container{
    
     width: 90%;
     max-width: 100%;
 }
+.background-header{
+    background-image: url(https://www.asofarma.com.mx/wp-content/uploads/2021/12/img_trabaja-hero-scaled.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    bottom: 16px;
+}
+
+
+
 .instrucciones-form{
     color: #797e96;
     padding-left: 7%;
@@ -190,6 +206,7 @@ footer .foot{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
 
 .pie-pagina .grupo-1 .box figure img{
@@ -204,6 +221,9 @@ footer .foot{
     flex-direction: column;
     text-decoration: none;
     padding-top: 6px;
+}
+a.derechos {
+    padding-top: 20px !important;
 }
 
 .red-social {
@@ -222,7 +242,13 @@ footer .foot{
     background-color: #909090;
     text-align: center;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+background-color: #7e2231;
 }
 .pie-pagina .grupo-1 .box h2{
     font-family:'ml', sans-serif;
@@ -230,6 +256,7 @@ footer .foot{
     color: #868686;
     text-align: center;
 }
+
 
 @media screen and (max-width:800px){
     .info-dec-prof {
@@ -308,6 +335,9 @@ footer .foot{
         text-align: center;
         border-radius: 10px;
         font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .pie-pagina .grupo-1 .box figure {
         width: 90%;
