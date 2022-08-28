@@ -1,161 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Confimación</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
 
-            </header>
-            <main>
-                <div class="instrucciones-form">
-                    <h4>Estimado doctor(a), el siguiente formulario tiene como objetivo que pueda
-                         compartirnos sus preferencias de contacto
-                        para darle un mejor servicio de
-                        información y promoción. 
-                    </h4>
-                    <p>Por favor, apóyenos llenando todos los campos.</p>
-                </div>
-                <form action="section">
-                    <fieldset>
-                        <label>Apellido paterno:*</label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        <label>Apellido materno:*</label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        <label>Nombre:* </label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        <label>Especialidad:* </label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        <label>Cédula profesional:* </label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        
-                        <div class="info-dec-prof">
-                            <p>Es importante colocar su cédula profesional, ya que las autoridades solicitan que la información sea dirigida solo 
-                                a profesionales de la salud, por lo que este dato será un factor clave para validar que usted es médico y, por lo
-                                tanto, puede recibir la información.
-                            </p>
-                        </div>
-                        <label>Correo electrónico:*</label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        <label>Teléfono:*</label>
-                        <input class="i-txt" type="text" name="aPaterno">
-                        <div class="info-camp-obl">
-                            <p>*Estos campos son obligatorios</p>
-                        </div>
-                    </fieldset>    
-                    <fieldset class="info-contact">
-                        <h4>Seleccione todas las opciones que sean de su agrado.</h4>
-                        <h4 class="info-pregunta">¿Cómo le gustaría que lo contactemos?</h4>
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Correo electrónico 
-                        </label>
-             
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            SMS
-                        </label>
-                  
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            WhastApp
-                        </label>
-                 
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Visitador médico en línea
-                        </label>
-                
-                    </fieldset>
-                    <fieldset class="info-contact">
-                        <h4 class="info-pregunta">¿Qué tipo de contenido desea recibir?</h4>
-                        <h4>Por favor, seleccione todas las opciones que le interesen:</h4>
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Actualizaciones e información de productos
-                        </label>
-            
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Invitación a eventos 
-                        </label>
-                        
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Eventos presenciales
-                        </label>
-                  
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Eventos virtuales
-                        </label>
-                    
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Eventos híbridos
-                        </label>
-                
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Contenidos de educación médica
-                        </label>
-                  
-                        <label>
-                            <input type="checkbox" id="cbox1" value="first_checkbox">
-                            Recibir muestras médicas o inicios de tratamiento para mis pacientes
-                        </label>
-                    </fieldset>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confimación</title>
+    <script src="https://kit.fontawesome.com/532ceb5197.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
-                 <fieldset class="privacidad">
+<body>
+    <div class="container">
+        <header></header>
+        <main>
+            <div class="instrucciones-form">
+                <h4>
+                    Estimado doctor(a), el siguiente formulario tiene como objetivo que
+                    pueda compartirnos sus preferencias de contacto para darle un mejor
+                    servicio de información y promoción.
+                </h4>
+                <p>Por favor, apóyenos llenando todos los campos.</p>
+            </div>
+            <form action="section">
+                <fieldset>
+                    <label>Apellido paterno:*</label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+                    <label>Apellido materno:*</label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+                    <label>Nombre:* </label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+                    <label>Especialidad:* </label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+                    <label>Cédula profesional:* </label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+
+                    <div class="info-dec-prof">
+                        <p>
+                            Es importante colocar su cédula profesional, ya que las
+                            autoridades solicitan que la información sea dirigida solo a
+                            profesionales de la salud, por lo que este dato será un factor
+                            clave para validar que usted es médico y, por lo tanto, puede
+                            recibir la información.
+                        </p>
+                    </div>
+                    <label>Correo electrónico:*</label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+                    <label>Teléfono:*</label>
+                    <input class="i-txt" type="text" name="aPaterno" />
+                    <div class="info-camp-obl">
+                        <p>*Estos campos son obligatorios</p>
+                    </div>
+                </fieldset>
+                <fieldset class="info-contact">
+                    <h4>Seleccione todas las opciones que sean de su agrado.</h4>
+                    <h4 class="info-pregunta">¿Cómo le gustaría que lo contactemos?</h4>
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox">
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Correo electrónico
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        SMS
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        WhastApp
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Visitador médico en línea
+                    </label>
+                </fieldset>
+                <fieldset class="info-contact">
+                    <h4 class="info-pregunta">¿Qué tipo de contenido desea recibir?</h4>
+                    <h4>Por favor, seleccione todas las opciones que le interesen:</h4>
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Actualizaciones e información de productos
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Invitación a eventos
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Eventos presenciales
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Eventos virtuales
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Eventos híbridos
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Contenidos de educación médica
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                        Recibir muestras médicas o inicios de tratamiento para mis
+                        pacientes
+                    </label>
+                </fieldset>
+
+                <fieldset class="privacidad">
+                    <label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Acepto el aviso de privacidad
                     </label>
-                    <p>Puede revisar nuestro aviso de privacidad <a href="#" id="aqui">aquí</a></p>
+                    <p>
+                        Puede revisar nuestro aviso de privacidad
+                        <a href="#" id="aqui">aquí</a>
+                    </p>
                     <div class="btn-enviar">
                         <a href="#" id="enviar">Enviar</a>
                     </div>
-                 </fieldset>
-
-                 
-
-
-
-
-
-
-
-
-
-
-
-
-                </form>
-              
-            </main>
-
-            <footer>
-                <div class="foot">
-                    <div class="logo-foot">
-                        <img src="http://placehold.it/500x300" alt="Asofarma Logo" />
-                    </div>
-                    <div class="informacion-foot">
-                        <p>Aviso de privacidad</p>
-                        <p>Términos y condiciones</p>
-                        <p>Farmacovigilancia</p>
-                        <p>Asofarma México 2022 © Todos los derechos reservados</p>
-                    </div>
-                    <div class="rsociales-foot">
-                        
-                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    <!-- <footer>
+            <div class="foot">
+                <div class="logo-foot">
+                    <img src="http://placehold.it/500x300" alt="Asofarma Logo" />
+                    <h1>aaa</h1>
                 </div>
-            </footer>
+                <div class="informacion-foot">
+                    <p>Aviso de privacidad</p>
+                    <p>Términos y condiciones</p>
+                    <p>Farmacovigilancia</p>
+                    <p>Asofarma México 2022 © Todos los derechos reservados</p>
+                </div>
+                <div class="rsociales-foot">
+                    
+                </div>
+            </div>
+        </footer> -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logo-gris.svg" alt="Asofarma Logo" />
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <a href="#">Aviso de privacidad</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Farmacovigilancia</a>
+                <a href="#" class="derechos">Asofarma México 2022 © Todos los derechos reservados</a>
+            </div>
+            <div class="box">
+                <h2>Siguenos en</h2>
+                <div class="red-social">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="">     
+                          <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+             
+                </div>
+            </div>
         </div>
-       
-    </body>
+    </footer>
+</body>
+
 </html>
