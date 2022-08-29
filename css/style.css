@@ -33,6 +33,8 @@ body{
 .logo-blanco{
     width: 200px;
     padding-top: 20px;
+    position: relative;
+    left: 30px;
 }
 .container{
    
@@ -40,13 +42,12 @@ body{
     max-width: 100%;
 }
 .background-header{
-    background-image: url(https://www.asofarma.com.mx/wp-content/uploads/2021/12/img_trabaja-hero-scaled.jpg);
-    background-position: center center;
+    background-image: url(../img/header.png);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    min-height: 500px;
-    position: relative;
-    bottom: 16px;
+    width: 100%;
+    height:417px;
 }
 
 
