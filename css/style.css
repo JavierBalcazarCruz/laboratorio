@@ -36,6 +36,18 @@ body{
     position: relative;
     left: 30px;
 }
+.franjas1 {
+    display: flex;   
+    padding-left: 147px;   
+    height:auto;
+    width: 100%;
+}
+.franjas1 img{
+    width: 411px;
+}
+
+
+
 .container{
    
     width: 90%;
@@ -43,6 +55,15 @@ body{
 }
 .background-header{
     background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height:417px;
+}
+
+.background-header2{
+    background-image: url(../img/header2.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -259,6 +280,36 @@ background-color: #7e2231;
 }
 
 
+/* ======================invitacion=================================*/
+.welcome-box{
+    display: flex;
+    flex-direction: column;
+    padding-left: 147px;
+    justify-content: end;
+    height: 251px;
+}
+.welcome-box .tit{
+    color: #fff;
+    font-family: 'sm', sans-serif;
+    margin: 0;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1px;
+}
+.franjas {
+    display: flex;   
+    padding-left: 147px;   
+    height:auto;
+    width: 400px;
+}
+.franjas img{
+    width: 312px;
+}
+
+
+
+/* ======================Media Query Movil=================================*/
 @media screen and (max-width:800px){
     .info-dec-prof {
         padding-right: 0%;
@@ -303,13 +354,13 @@ background-color: #7e2231;
         padding: 5px 0 0 0;
         margin: 0;
     }
-.i-txt {
+    .i-txt {
     padding-left: 3px;
     border: 1px solid #868686;
     border-radius: 9px;
     width: 100%;
     height: 31px;
-}
+    }
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -346,5 +397,30 @@ background-color: #7e2231;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .welcome-box {
+        display: flex;
+        flex-direction: column;
+        padding-left: 52px;
+        justify-content: end;
+        height: 251px;
+    }
+    .welcome-box .tit {
+        color: #fff;
+        font-family: 'sm', sans-serif;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: 1px;
+    }
+    .franjas1 {
+        display: flex;   
+        padding-left: 50px;   
+        height:auto;
+        width: 100%;
+    }
+    .franjas1 img {
+        width: 308px;
     }
 }
