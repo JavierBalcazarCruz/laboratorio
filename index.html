@@ -8,6 +8,7 @@
     <title>Registro</title>
     <script src="https://kit.fontawesome.com/532ceb5197.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -38,18 +39,26 @@
                 </h4>
                 <p>Por favor, apóyenos llenando todos los campos.</p>
             </div>
-            <form action="section">
                 <fieldset>
-                    <label>Apellido paterno:*</label>
-                    <input class="i-txt" type="text" name="aPaterno" />
-                    <label>Apellido materno:*</label>
-                    <input class="i-txt" type="text" name="aPaterno" />
-                    <label>Nombre:* </label>
-                    <input class="i-txt" type="text" name="aPaterno" />
-                    <label>Especialidad:* </label>
-                    <input class="i-txt" type="text" name="aPaterno" />
-                    <label>Cédula profesional:* </label>
-                    <input class="i-txt" type="text" name="aPaterno" />
+                    <label for="aPaterno">Apellido paterno:*</label>
+                     <input name="aPaterno" class="i-txt" type="text" required/>
+
+                    <label for="aMaterno">Apellido materno:*</label>
+                     <input name="aMaterno" class="i-txt" type="text" required  />
+
+                    <label for="nombre">Nombre:* </label>
+                     <input name="nombre" class="i-txt" type="text" required  />
+
+                    <label for="Especialidad">Especialidad:* </label>
+                     <select name="Especialidad" class="i-txt" id="esp">
+                     
+                      </select>
+
+                      
+
+                    <label for="cProfesional">Cédula profesional:* </label>
+                     <input name="cProfesional" class="i-txt" type="text" required  />
+
                     <div class="info-dec-prof">
                         <p>
                             Es importante colocar su cédula profesional, ya que las
@@ -59,34 +68,38 @@
                             recibir la información.
                         </p>
                     </div>
-                    <label>Correo electrónico:*</label>
-                    <input class="i-txt" type="text" name="aPaterno" />
-                    <label>Teléfono:*</label>
-                    <input class="i-txt" type="text" name="aPaterno" />
+
+                    <label for="email">Correo electrónico:*</label>
+                    <input name="email" class="i-txt" type="email" required  />
+                     
+                    <label for="telefono">Teléfono:*</label>
+                     <input name="telefono" class="i-txt" type="tel" required  />
+
                     <div class="info-camp-obl">
                         <p>*Estos campos son obligatorios</p>
                     </div>
                 </fieldset>
+                
                 <fieldset class="info-contact">
                     <h4>Seleccione todas las opciones que sean de su agrado.</h4>
                     <h4 class="info-pregunta">¿Cómo le gustaría que lo contactemos?</h4>
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Correo electrónico
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         SMS
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         WhastApp
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Visitador médico en línea
                     </label>
                 </fieldset>
@@ -94,37 +107,37 @@
                     <h4 class="info-pregunta">¿Qué tipo de contenido desea recibir?</h4>
                     <h4>Por favor, seleccione todas las opciones que le interesen:</h4>
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Actualizaciones e información de productos
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Invitación a eventos
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Eventos presenciales
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Eventos virtuales
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Eventos híbridos
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Contenidos de educación médica
                     </label>
 
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Recibir muestras médicas o inicios de tratamiento para mis
                         pacientes
                     </label>
@@ -132,7 +145,7 @@
 
                 <fieldset class="privacidad">
                     <label>
-                        <input type="checkbox" id="cbox1" value="first_checkbox" />
+                         <input type="checkbox" id="cbox1" value="first_checkbox" />
                         Acepto el aviso de privacidad
                     </label>
                     <p>
@@ -181,5 +194,5 @@
         </div>
     </footer>
 </body>
-
+<script type="text/javascript" src="/js/script.js"></script>
 </html>
