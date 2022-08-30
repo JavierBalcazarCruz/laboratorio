@@ -21,6 +21,14 @@ src: url(../fonts/Montserrat-Light.otf);
 font-family:mr;
 src: url(../fonts/Montserrat-Regular.otf);
 }
+@font-face {
+    font-family:gb;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+@font-face {
+    font-family:gm;
+    src: url(../fonts/Gotham\ Medium.otf);
+}
 
 body{
     background-color: #fff;
@@ -46,6 +54,15 @@ body{
     width: 411px;
 }
 
+.franjas2 {
+    display: flex;   
+    padding-left: 147px;   
+    height:auto;
+    width: 100%;
+}
+.franjas2 img{
+    width: 256px;
+}
 
 
 .container{
@@ -297,16 +314,94 @@ background-color: #7e2231;
     line-height: 44px;
     letter-spacing: 1px;
 }
-.franjas {
-    display: flex;   
-    padding-left: 147px;   
-    height:auto;
-    width: 400px;
+.grx h2 {
+    color: #FF0032;
+    align-items: center;
+    font-family: 'msb', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
 }
-.franjas img{
-    width: 312px;
+.grx h3 {
+    color: #797E96;
+    align-items: center;
+    font-family: 'msb', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin:0;
+    padding-top: 15px;
 }
-
+.link{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.link h4{
+    font-family: 'mb', sans-serif;
+    color: #11496F;
+    font-size: 19px;
+    text-align: center;
+}
+.btn{
+    background-color: #fff;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 2px 5px 11px 3px;
+}
+.btn a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'gb', sans-serif;
+    color: #841E20;
+    font-size: 20px;
+}
+.txt-hexagono{
+    font-family: 'gm', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 48px;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hexagon {
+    position: relative;
+    width: 300px; 
+    height: 173.21px;
+    background-color: #64C7CC;
+    margin: 86.60px 0;
+    margin-left: 10px;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 86.60px solid #64C7CC;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 86.60px solid #64C7CC;
+  }
 
 
 /* ======================Media Query Movil=================================*/
@@ -422,5 +517,14 @@ background-color: #7e2231;
     }
     .franjas1 img {
         width: 308px;
+    }
+    .franjas2 {
+        display: flex;   
+        padding-left: 50px;   
+        height:auto;
+        width: 100%;
+    }
+    .franjas2 img {
+        width: 200px;
     }
 }
