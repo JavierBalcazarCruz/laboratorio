@@ -1,3 +1,5 @@
+import {saveInfo} from './firebase.js'
+
 let aEspecialidad = ['Anestesiología',
 'Anestesiología Pediátrica',
 'Anestesiólogo para los Servicios Rurales de la Salud',
@@ -163,10 +165,18 @@ function guardar() {
     let chkmedica = document.getElementById("chkmedica").checked;
     let chkrmedicas = document.getElementById("chkrmedicas").checked;
     let chkprivacidad = document.getElementById("chkprivacidad").checked;
-   
       
-console.log(apellidoP,apellidoM,nombre,esp,cedula,email,tel,chkmail,chksms,chkwh,chklinea,chkprod,chkievent,chkep,chkevirtual,chkehib,chkmedica,chkrmedicas,chkprivacidad);
+saveInfo(apellidoP,apellidoM,nombre,esp,cedula,email,tel,chkmail,chksms,chkwh,chklinea,chkprod,chkievent,chkep,chkevirtual,chkehib,chkmedica,chkrmedicas,chkprivacidad)
     
-    
-  }
+}
   
+
+const taskform =document.getElementById('task-form');
+taskform.addEventListener('submit',(e) => {
+  e.preventDefault();
+  guardar();
+})
+
+
+
+
