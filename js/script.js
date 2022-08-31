@@ -167,7 +167,7 @@ function guardar() {
     let chkprivacidad = document.getElementById("chkprivacidad").checked;
       
 saveInfo(apellidoP,apellidoM,nombre,esp,cedula,email,tel,chkmail,chksms,chkwh,chklinea,chkprod,chkievent,chkep,chkevirtual,chkehib,chkmedica,chkrmedicas,chkprivacidad)
-    
+
 }
   
 
@@ -175,6 +175,7 @@ const taskform =document.getElementById('task-form');
 taskform.addEventListener('submit',(e) => {
   e.preventDefault();
   guardar();
+  setTimeout( function() {  window.location.href = "../invitacion.html"; }, 1000 );
 })
 
 
