@@ -135,3 +135,38 @@ function llenarSelect()
 }
 
 llenarSelect()
+
+
+function guardar() {
+
+    let apellidoP = document.getElementById("paterno").value;
+    let apellidoM = document.getElementById("materno").value;
+    let nombre = document.getElementById("nombre").value;
+    let combo = document.getElementById("esp");
+    let esp = combo.options[combo.selectedIndex].text;
+    let cedula = document.getElementById("cProfesional").value;
+    let email = document.getElementById("mail").value;
+    let tel = document.getElementById("tel").value;
+
+    //chk
+
+    let chkmail = document.getElementById("chkmail").checked;
+    let chksms = document.getElementById("chksms").checked;
+    let chkwh = document.getElementById("chkwh").checked;
+    let chklinea = document.getElementById("chklinea").checked;
+    let chkprod = document.getElementById("chkprod").checked;
+    let chkievent = document.getElementById("chkievent").checked;
+    let chkep = document.getElementById("chkep").checked;
+      
+    let chkevirtual = document.getElementById("chkevirtual").checked;
+    let chkehib = document.getElementById("chkehib").checked;
+    let chkmedica = document.getElementById("chkmedica").checked;
+    let chkrmedicas = document.getElementById("chkrmedicas").checked;
+    let chkprivacidad = document.getElementById("chkprivacidad").checked;
+   
+      
+console.log(apellidoP,apellidoM,nombre,esp,cedula,email,tel,chkmail,chksms,chkwh,chklinea,chkprod,chkievent,chkep,chkevirtual,chkehib,chkmedica,chkrmedicas,chkprivacidad);
+    
+    
+  }
+  
